@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <link rel="stylesheet" href="./css/index-style.css">
 <link rel="stylesheet" href="./css/job-details-style.css">
-<link rel="icon" type="image/x-icon" href="./files/avolta-favicon-32x32.png">
+<link rel="icon" type="image/x-icon" href="./files/lkf-favicon.ico">
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -19,12 +19,12 @@
 <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 <script type="text/javascript" src="https://web103.reachmee.com/customerjs/helper.js"></script>
 	
-  <meta property="og:title" content="Ledig stilling">
-  <meta property="og:image" content="https://headlessjobsites.github.io/akh/files/Kvithammar.jpg"">
+  <meta property="og:title" content="Lunds Kommuns Fastighets ABs karriärportal">
+  <meta property="og:image" content="https://headlessjobsites.github.io/akh/files/Lediga-jobb.jpg"">
   <meta property="og:url" content="https://headlessjobsites.github.io/akh/">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Ledig stilling">
-  <meta name="twitter:image" content="https://headlessjobsites.github.io/akh/files/Kvithammar.jpg"">
+  <meta name="twitter:title" content="Lunds Kommuns Fastighets ABs karriärportal">
+  <meta name="twitter:image" content="https://headlessjobsites.github.io/akh/files/Lediga-jobb.jpg"">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:type" content="website">
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const params = new URLSearchParams(window.location.search);
     const jobId = params.get('rmjob') ? parseInt(params.get('rmjob'), 10) : parseInt(params.get('jobId'), 10);
 
-    fetch('https://api.talentech.io/reachmee/feed/lkf')
+    fetch('https://api.talentech.io/reachmee/feed/akh')
         .then(response => response.json())
         .then(jobs => {
             const job = jobs.find(job => job.ad_id === jobId);
@@ -441,7 +441,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const jobId = params.get('rmjob') || params.get('jobId');
 
     // Fetch job details (assuming you have an endpoint to get job details by jobId)
-    fetch(`https://api.talentech.io/reachmee/feed/lkf`) // Replace with your actual API endpoint
+    fetch(`https://api.talentech.io/reachmee/feed/akh`) // Replace with your actual API endpoint
         .then(response => response.json())
         .then(jobs => {
             const job = jobs.find(job => job.ad_id === parseInt(jobId));
@@ -730,7 +730,7 @@ $(document).ready(function () {
 });
 
 function fetchJobs(currentJobId) {
-    fetch('https://api.talentech.io/reachmee/feed/lkf')
+    fetch('https://api.talentech.io/reachmee/feed/akh')
         .then(response => response.json())
         .then(data => {
             jobs = data.filter(job => job.ad_id !== parseInt(currentJobId));
@@ -784,7 +784,7 @@ $(document).ready(function() {
     // Get 'rmjob' if present, otherwise get 'jobId'
     const jobId = params.get('rmjob') ? parseInt(params.get('rmjob'), 10) : parseInt(params.get('jobId'), 10);
 
-    fetch('https://api.talentech.io/reachmee/feed/lkf')
+    fetch('https://api.talentech.io/reachmee/feed/akh')
         .then(response => response.json())
         .then(jobs => {
             const job = jobs.find(job => job.ad_id === jobId);
