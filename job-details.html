@@ -17,7 +17,7 @@
 <script src="https://kit.fontawesome.com/ca38a06270.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
 <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
-<script type="text/javascript" src="https://web106.reachmee.com/customerjs/helper.js"></script>
+<script type="text/javascript" src="https://web103.reachmee.com/customerjs/helper.js"></script>
 	
   <meta property="og:title" content="Ledig stilling">
   <meta property="og:image" content="https://headlessjobsites.github.io/akh/files/Kvithammar.jpg"">
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const params = new URLSearchParams(window.location.search);
     const jobId = params.get('rmjob') ? parseInt(params.get('rmjob'), 10) : parseInt(params.get('jobId'), 10);
 
-    fetch('https://api.talentech.io/reachmee/feed/akh')
+    fetch('https://api.talentech.io/reachmee/feed/lkf')
         .then(response => response.json())
         .then(jobs => {
             const job = jobs.find(job => job.ad_id === jobId);
@@ -151,7 +151,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     <a class="nav-link" href="#our-process">Rekrutteringsprosess</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" target="blank" href="https://akh.no">akh.no <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" target="blank" href="https://lkf.se">lkf.se <span class="sr-only">(current)</span></a>
                 </li>
             </ul>
         </div>
@@ -279,7 +279,7 @@ document.addEventListener("DOMContentLoaded", function() {
 function loadExternalScriptAndBuildIframe() {
     var script = document.createElement('script');
     script.type = 'text/javascript';
-    script.src = 'https://web106.reachmee.com/customerjs/I002-212-8.js';
+    script.src = 'https://web103.reachmee.com/customerjs/I018-716-2.js';
     script.onload = function() {
         buildIframe();
     };
@@ -287,14 +287,14 @@ function loadExternalScriptAndBuildIframe() {
 }
 
 function buildIframe() {
-    var iFrameUrl = 'https://web106.reachmee.com/ext/';
-    var validator = '9515b69d8e98d583d52f8ce6f8662f09';
-    var iid = 'I002';
-    var customer = '212';
-    var site = '6';
-    var iHelperUrl = 'https://headlessjobsites.github.io/akh/job-details.html?';
+    var iFrameUrl = 'https://web103.reachmee.com/ext/';
+    var validator = '7f4f3be3058e3cb999c1bf054afc7b49';
+    var iid = 'I018';
+    var customer = '716';
+    var site = '2';
+    var iHelperUrl = 'https://headlessjobsites.github.io/lkf/job-details.html?';
     var height = '4000';
-    var langDef = 'NO';
+    var langDef = 'SE';
     var title = 'ReachMee Recruit external site';
 
     // More URL building logic here, using the current script logic
@@ -441,7 +441,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const jobId = params.get('rmjob') || params.get('jobId');
 
     // Fetch job details (assuming you have an endpoint to get job details by jobId)
-    fetch(`https://api.talentech.io/reachmee/feed/akh`) // Replace with your actual API endpoint
+    fetch(`https://api.talentech.io/reachmee/feed/lkf`) // Replace with your actual API endpoint
         .then(response => response.json())
         .then(jobs => {
             const job = jobs.find(job => job.ad_id === parseInt(jobId));
@@ -460,7 +460,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     iframe.style.width = "100%";
                     iframe.style.border = "none";
                     iframe.id = "applicationFormIframe";
-                    const iframeSrc = `https://web106.reachmee.com/ext/I002/212/apply?job_id=${jobId}&site=8&validator=9515b69d8e98d583d52f8ce6f8662f09&lang=UK&ihelper=${encodeURIComponent('https://career.talentech.com/jobs/rm?rmpage=job&rmjob=' + jobId)}`;
+                    const iframeSrc = `https://web103.reachmee.com/ext/I018/716/apply?job_id=${jobId}&site=2&validator=7f4f3be3058e3cb999c1bf054afc7b49&lang=SE&ihelper=${encodeURIComponent('https://career.talentech.com/jobs/rm?rmpage=job&rmjob=' + jobId)}`;
                     iframe.setAttribute('src', iframeSrc);
                     document.getElementById('applicationFormContainer').appendChild(iframe);
                 }
@@ -474,7 +474,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // Consolidate message listener, adding security check
 window.addEventListener('message', function(event) {
     // Verify the origin of your iframe content
-    const expectedOrigin = 'https://web106.reachmee.com';
+    const expectedOrigin = 'https://web103.reachmee.com';
     if (event.origin === expectedOrigin && typeof event.data === 'string' && event.data.startsWith('resize::')) {
         const height = event.data.split('resize::')[1];
         if (height) {
@@ -560,7 +560,7 @@ window.addEventListener('message', function(event) {
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('agent').addEventListener('click', function() {
-        var iframeUrl = "https://web106.reachmee.com/ext/I002/212/subscribe?site=8&lang=UK&validator=9515b69d8e98d583d52f8ce6f8662f09";
+        var iframeUrl = "https://web103.reachmee.com/ext/I018/716/subscribe?site=2&lang=SE&validator=7f4f3be3058e3cb999c1bf054afc7b49";
         document.getElementById('modalIframe').src = iframeUrl;
         $('#exampleModal').modal('show');
     });
@@ -580,7 +580,7 @@ document.addEventListener('DOMContentLoaded', function() {
         <div class="">
             <a href="https://www.facebook.com/HaehreEntreprenor/?locale=nb_NO"><img src="./files/TT-f.svg" alt="Icon 1" class="mx-2" style="width: 30px; height: 30px;"></a>
             <a href="https://no.linkedin.com/company/haehreentreprenor"><img src="./files/TT-l.svg" alt="Icon 2" class="mx-2" style="width: 30px; height: 30px;"></a>
-            <a href="https://akh.no/kontakt-selskapet/"><img src="./files/TT-e.svg" alt="Icon 4" class="mx-2" style="width: 30px; height: 30px;"></a>
+            <a href="https://lkf.no/kontakt-selskapet/"><img src="./files/TT-e.svg" alt="Icon 4" class="mx-2" style="width: 30px; height: 30px;"></a>
         </div>
     </div>
 </section>
@@ -730,7 +730,7 @@ $(document).ready(function () {
 });
 
 function fetchJobs(currentJobId) {
-    fetch('https://api.talentech.io/reachmee/feed/akh')
+    fetch('https://api.talentech.io/reachmee/feed/lkf')
         .then(response => response.json())
         .then(data => {
             jobs = data.filter(job => job.ad_id !== parseInt(currentJobId));
@@ -784,7 +784,7 @@ $(document).ready(function() {
     // Get 'rmjob' if present, otherwise get 'jobId'
     const jobId = params.get('rmjob') ? parseInt(params.get('rmjob'), 10) : parseInt(params.get('jobId'), 10);
 
-    fetch('https://api.talentech.io/reachmee/feed/akh')
+    fetch('https://api.talentech.io/reachmee/feed/lkf')
         .then(response => response.json())
         .then(jobs => {
             const job = jobs.find(job => job.ad_id === jobId);
@@ -875,7 +875,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (openApplication !== null) {
         // Change the src of the iframe
         const applicationFormIframe = document.getElementById('applicationFormIframe');
-        applicationFormIframe.src = "https://web106.reachmee.com/ext/I002/212/apply?site=6&lang=NO&validator=9515b69d8e98d583d52f8ce6f8662f09&job_id=-1";
+        applicationFormIframe.src = "https://web103.reachmee.com/ext/I018/716/apply?site=2&lang=SE&validator=7f4f3be3058e3cb999c1bf054afc7b49&job_id=-1";
         
         // Hide the job description and metadata
         document.getElementById('our-process').style.display = 'none';
