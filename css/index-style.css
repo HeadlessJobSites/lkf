@@ -261,6 +261,9 @@ h2 {
 	display: block;
 }
 @media (max-width: 768px) {
+    .blockquote p {
+        font-size: 20px;
+    }
 	.team-member {
 		flex: 0 0 70%;
 		max-width: 70%;
@@ -662,9 +665,6 @@ a:hover {
 	#inner-job-title {
     font-size: 2rem;
     line-height: 1.4;
-	}
-	.text-center {
-		text-align: left !important;
 	}
 	.job-info, .apply-btn-header {
 		margin-top: 20px;
