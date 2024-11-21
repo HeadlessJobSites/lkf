@@ -480,7 +480,6 @@ h2 {
 	justify-content: start;
 	align-items: center;
 	background-color: #eeeef2;
-	border-radius: 10px;
 	padding: 20px;
 	padding-top: 60px;
 	width: 100%;
@@ -546,7 +545,6 @@ a:hover {
 }
 #jobList .card {
 	border: 0;
-	border-radius: 10px;
 }
 .card-category {
 	margin-bottom: 30px;
@@ -556,7 +554,6 @@ a:hover {
 .card-category span {
 	background: #eeeef2;
 	padding: 8px;
-	border-radius: 5px;
 	font-size: 0.9rem;
 }
 #jobList .card-body {
@@ -606,7 +603,6 @@ a:hover {
     color: white !important;
     border: none;
     text-decoration: none !important;
-    border-radius: 50px;
     font-size: 16px;
     padding: 10px 20px;
     font-weight: bold;
@@ -752,7 +748,6 @@ font-size: 1.8rem;
 @media (min-width: 992px) {
     .navbar-expand-lg .navbar-nav {
         background: rgb(0,0,0,0.5);
-        border-radius: 10px;
         padding-left: 15px;
         padding-right: 15px;
     }
@@ -777,7 +772,6 @@ a.nav-link.btn.btn-primary.apply-btn {
 }
    .navbar.bg-dark .navbar-nav {
         background: transparent;
-        border-radius: 10px;
         padding-left: 15px;
         padding-right: 15px;
         /*margin: 0 auto;*/
@@ -795,7 +789,6 @@ a.nav-link.btn.btn-primary.apply-btn {
 .navbar-dark .navbar-nav .new-link {
     background-color: rgba(255, 255, 255, 0.2);
     border: 1px solid white;
-    border-radius: 5px;
     padding: 5px 10px;
     margin-top: 10px;
 }
@@ -805,7 +798,6 @@ a.nav-link.new-link {
     font-weight: 600;
     background: rgb(255 255 255 / 5%);
     border: 1px solid rgb(255 255 255 / 10%);
-    border-radius: 10px;
     padding: 6px 11px;
 }
 .navbar-dark i.fa-thin.fa-arrow-down{
