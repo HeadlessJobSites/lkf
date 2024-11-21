@@ -132,9 +132,9 @@ document.addEventListener('DOMContentLoaded', function() {
 -->
 	
 	
-	<div class="talentech-section pt-5" id="company-section">
+	<div class="talentech-section pt-5 m-pt-2" id="company-section">
     <div class="container pt-4 m-mt-2">
-        <h2 class="m-px-2">Välkommen till <div class="mt-2 title-alt">Lunds Kommuns Fastighets AB</div></h2>
+        <h2 class="m-px-2 intro-header">Välkommen till <div class="mt-2 title-alt">Lunds Kommuns Fastighets AB</div></h2>
         <p class="my-4 m-px-2">Om du, liksom vi, brinner för att förbättra människors boende, trygghet och trivsel är du välkommen att söka jobb hos oss eller prenumerera på våra tjänster.</p>
         <p class="my-4 m-px-2">I vårt dagliga arbete skapar vi tillsammans FLER OCH BÄTTRE HEM för lundaborna. Alla behöver ett bra och hållbart boende där man trivs och bra bostäder gör Lund mer attraktivt för både människor och företag. Som medarbetare på LKF är du delaktig i utvecklingen av bostadsmarknaden i Lund, ett både spännande och utmanande jobb.</p>
     </div>
@@ -191,7 +191,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 </script>
 
-<div class="talentech-section py-5 mb-5 m-mb-3">
+<div class="talentech-section py-5 mb-5 m-mb-3 m-pt-0">
     <div class="container pt-0 mb-5 pb-3 video-container m-my-0">
         <!--<video id="talentechVideo" class="rounded-video" playsinline autoplay loop muted>
             <source src="/files/This-is-us-TT.mp4" type="video/mp4">
@@ -211,7 +211,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 <section class="team-section mt-5 mb-2 pt-3 pb-5 m-my-0" id="meet-the-team" style="background-color: #f0f0f0;">
         <h2 class="container pt-5 mb-0 pb-0 m-px-4">Träffa <span class="title-alt">teamet</span></h2>
-    <div class="container mt-0 pt-2 pb-5">
+    <div class="container mt-0 pt-2 pb-5 m-px-0 m-pb-3">
         <div class="row mt-3 m-mt-2 m-mx-1">
             <!-- team 1 -->
 		    <script src="https://widget.gobistories.com/gwi/6" async onload="gobi.discover()"></script>
@@ -241,7 +241,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				<p>"Ut in orci risus. Praesent elementum quam eu nulla rutrum feugiat. Sed ultrices, diam sit amet placerat efficitur, eros orci mattis risus, vitae aliquet magna mauris fermentum augue. Morbi ut ante rutrum, mollis augue at, porta mauris. In hac habitasse platea dictumst. Donec porta molestie eros at laoreet. Quisque dignissim et ex et condimentum. Suspendisse venenatis est ac dui dignissim pharetra. Etiam vitae bibendum lorem."</p>
             </div>
         </div>
-<div class="row align-items-center mt-5 mb-5 pt-5 pb-5 m-my-0 m-pt-0">
+<div class="row align-items-center mt-5 mb-5 pt-5 pb-5 m-my-0 m-py-0">
     <div class="col-lg-5 text-padding m-p-4 order-2 order-lg-1">
         <h3 style="font-size: 24px;font-weight: 800;">Gunilla Flygare</h3>
         <p><strong>Vice vd och affärsutvecklingschef</strong></p>
@@ -429,8 +429,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-<section class="benefits-section my-5 pb-4 m-py-0 m-mt-0">
-        <h2 class="container pt-5 m-pt-4 m-px-4 m-pb-2">Noen av våre <span class="title-alt">fordeler</span></h2>
+<section class="benefits-section my-5 pb-4 m-pb-0 m-pt-4 m-mt-0">
+        <h2 class="container pt-5 m-pt-4 m-px-4 m-pb-2">några av våra <span class="title-alt">fördelar</span></h2>
     <div class="container">
         <div class="row">
             <!-- Benefit 1 -->
@@ -716,13 +716,13 @@ $(document).ready(function () {
 
 	    
 	// Populate location filter
-        $('#locationFilter').html('<option value="All">Alle steder</option>');
+        $('#locationFilter').html('<option value="All">Alla platser</option>');
         locationSet.forEach(country => {
             $('#locationFilter').append(`<option value="${country}">${country}</option>`);
         });
 
         // Populate job type filter
-        $('#jobTypeFilter').html('<option value="All">Alle stillingstyper</option>');
+        $('#jobTypeFilter').html('<option value="All">Alla typer av jobb</option>');
         jobTypeSet.forEach(type => {
             $('#jobTypeFilter').append(`<option value="${type}">${type}</option>`);
         });
