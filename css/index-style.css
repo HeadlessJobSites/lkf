@@ -410,7 +410,7 @@ h2 {
 	}
 	.benefit-item {
 		flex: 0 0 80%;
-		margin-right: 20px;
+		margin-right: 0;
 	}
 	.benefit-content {
 	}
