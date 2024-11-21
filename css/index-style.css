@@ -148,7 +148,7 @@ h1 {
 .btn-primary {
 	background-color: #539333;
 	border: 0;
-	border-radius: 5px;
+	border-radius: 0px;
     padding: 0.6rem 2.5rem;
     padding-bottom: 0.8rem;
 }
@@ -161,7 +161,7 @@ h1 {
 }
 .rounded-img {
 	width: 100%;
-    	border-radius: 5px;
+    	border-radius: 0px;
 	margin-top: 20px;
 }
 h2 {
@@ -185,7 +185,7 @@ h2 {
 	box-sizing: border-box;
 }
 .team-member img {
-	border-radius: 5px;
+	border-radius: 0px;
 	margin-bottom: 20px;
 	width: 100%;
 	height: auto;
@@ -267,7 +267,7 @@ h2 {
 		height: 250px;
 		background-size: cover;
 		background-position: center;
-		border-radius: 10px;
+		border-radius: 0px;
 		margin-bottom: 20px;
 	}
 	.carousel-control-prev, .carousel-control-next {
@@ -281,7 +281,7 @@ h2 {
 	background-color: #f8f9fa;
 }
 .rounded-img {
-    	border-radius: 2.5rem;
+    	border-radius: 0rem;
 	width: 100%;
 	height: auto;
 }
@@ -308,7 +308,7 @@ h2 {
 	padding: 20px;
 }
 .rounded-img {
-    	border-radius: 2.5rem;
+    	border-radius: 0;
 	width: 100%;
 	max-width: 100%;
 	height: auto;
@@ -513,7 +513,7 @@ h2 {
 	justify-content: start;
 	align-items: center;
 	background-color: #f0f0f0;
-	border-radius: 10px;
+	border-radius: 0px;
 	padding: 20px;
 	padding-top: 60px;
 	width: 100%;
@@ -579,7 +579,7 @@ a:hover {
 }
 #jobList .card {
 	border: 0;
-	border-radius: 5px;
+	border-radius: 0px;
 }
 .card-category {
 	margin-bottom: 30px;
@@ -589,7 +589,7 @@ a:hover {
 .card-category span {
 	background: #f0f0f0;
 	padding: 8px;
-	border-radius: 5px;
+	border-radius: 0px;
 	font-size: 0.9rem;
 }
 #jobList .card-body {
@@ -642,7 +642,7 @@ a:hover {
     color: white !important;
     border: none;
     text-decoration: none !important;
-    border-radius: 5px;
+    border-radius: 0px;
     font-size: 16px;
     padding: 10px 20px;
     font-weight: bold;
@@ -788,7 +788,7 @@ font-size: 1.8rem;
 @media (min-width: 992px) {
     .navbar-expand-lg .navbar-nav {
         background: rgb(0,0,0,0.5);
-        border-radius: 5px;
+        border-radius: 0px;
         padding-left: 15px;
         padding-right: 15px;
     }
@@ -813,7 +813,7 @@ a.nav-link.btn.btn-primary.apply-btn {
 }
    .navbar.bg-dark .navbar-nav {
         background: transparent;
-        border-radius: 5px;
+        border-radius: 0px;
         padding-left: 15px;
         padding-right: 15px;
         /*margin: 0 auto;*/
@@ -831,7 +831,7 @@ a.nav-link.btn.btn-primary.apply-btn {
 .navbar-dark .navbar-nav .new-link {
     background-color: rgba(255, 255, 255, 0.2);
     border: 1px solid white;
-    border-radius: 5px;
+    border-radius: 0px;
     padding: 5px 10px;
     margin-top: 10px;
 }
@@ -841,7 +841,7 @@ a.nav-link.new-link {
     font-weight: 600;
     background: rgb(255 255 255 / 5%);
     border: 1px solid rgb(255 255 255 / 10%);
-    border-radius: 5px;
+    border-radius: 0px;
     padding: 6px 11px;
 }
 .navbar-dark i.fa-thin.fa-arrow-down{
