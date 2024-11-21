@@ -645,7 +645,7 @@ a:hover {
 	display: block;
 }
 .apply-btn {
-    background-color: #539333 !important;
+    background-color: #539333;
     color: white !important;
     border: none;
     text-decoration: none !important;
