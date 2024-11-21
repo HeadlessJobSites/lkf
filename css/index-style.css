@@ -55,10 +55,15 @@
 	font-display: swap;
 }
 .leaflet-container a.leaflet-popup-close-button {
-    padding: 6px 6px 0 0;
+    padding: 8px 8px 0 0 !important;
+    margin-right: 4px;
+    color: #000 !important;
 }
-.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+.leaflet-popup-content-wrapper {
     background: transparent !important;
+}
+.leaflet-popup-tip {
+    background: white !important;
 }
 .leaflet-popup-content {
     margin: 0 !important;
