@@ -54,7 +54,9 @@
 	font-style: normal;
 	font-display: swap;
 }
-
+.leaflet-container a.leaflet-popup-close-button {
+    padding: 6px 6px 0 0;
+}
 .leaflet-popup-content-wrapper, .leaflet-popup-tip {
     background: transparent !important;
 }
