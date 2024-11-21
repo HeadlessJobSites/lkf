@@ -455,8 +455,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Display the message and button if hide_apply_button is true
                 const messageContainer = document.createElement('div');
                 messageContainer.innerHTML = `
-                    <center><p>Ansökningsformuläret är inaktiverat för detta jobb. Se arbetsbeskrivningen för mer information om hur du ansöker.</p>
-                    <a href="#tt-talentech-section-1" class="btn btn-primary mt-5">Se arbetsbeskrivningen</a></center>
+                    <center><p class="mt-5">Ansökningsformuläret är inaktiverat för detta jobb. Se arbetsbeskrivningen för mer information om hur du ansöker.</p>
+                    <a href="#tt-talentech-section-1" class="btn btn-primary my-5">Se arbetsbeskrivningen</a></center>
                 `;
                 document.getElementById('applicationFormContainer').appendChild(messageContainer);
             } else {
