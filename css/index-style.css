@@ -67,10 +67,6 @@
     bottom: 2px;
     position: relative;
 }
-#company-section {
-    background: #013d6a;
-    color: #fff;
-}
 .leaflet-popup-content-wrapper, .leaflet-popup-tip {
     background: transparent !important;
 }
@@ -622,11 +618,9 @@ a:hover {
 	}
 }
 @media (min-width: 992px) {
-	.talentech-section h2,.talentech-section p, .talentech-section ul, .talentech-section ol, .talentech-section h3, .talentech-section h4, .talentech-section h5, .talentech-section h6 {
-		padding-left: 210px;
-		padding-left: 0;
-		padding-right: 260px;
-		line-height: 1.6;
+	.talentech-section h2,.talentech-section p {
+		padding-left: 100px;
+		padding-right: 150px;
 	}
 	.job-description ul {
 		margin-left: 40px;
