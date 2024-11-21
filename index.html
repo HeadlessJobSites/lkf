@@ -734,9 +734,12 @@ function displayJobs() {
 
     if (jobs.length === 0) {
         // Display a message if there are no jobs
-        $('#jobList').append('<p class="no-jobs-message">Det finns för närvarande inga lediga jobb publicerade.</p>');
+        $('#jobList').append('<p class="no-jobs-message mx-3 m-mx-0">Det finns för närvarande inga lediga jobb publicerade.</p>');
+        $('#filtersContainer').hide(); // Hide filters
         $('#loadMore').hide(); // Hide "Load More" button since there are no jobs
         return; // Exit the function early
+    } else {
+        $('#filtersContainer').show(); // Show filters if jobs exist
     }
 
     let filteredJobs = jobs.slice(0, displayedJobs); // Get the subset of jobs to be displayed
@@ -763,6 +766,7 @@ function displayJobs() {
 
     updateLoadMoreVisibility(); // Update the visibility of the "Load More" button
 }
+
 
 
     // Function to build HTML for a job card
