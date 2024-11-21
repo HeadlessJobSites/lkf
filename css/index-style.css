@@ -78,7 +78,6 @@
 	font-weight: 800;
 }
 .front-image img {
-    	border-radius: 8px 40px 0 0;
 	width: 100%;
 }
 .hero-section {
@@ -159,7 +158,7 @@ h1 {
     font-size: 4rem;
 }
 .btn-primary {
-	background-color: #003D6A;
+	background-color: #539333;
 	border: 0;
 	border-radius: 5px;
     padding: 0.6rem 2.5rem;
@@ -261,7 +260,6 @@ h2 {
 .team-background-image {
 	background-size: cover;
 	background-position: center;
-	border-radius: 8px 40px 0 0;
 	margin-bottom: 20px;
 	width: 100%;
 	height: 450px;
@@ -328,7 +326,7 @@ h2 {
 	height: auto;
 }
 .quote-section {
-	background-color: #003D6A;
+	background-color: #539333;
 	color: #fff;
 	padding: 60px 20px;
 }
@@ -368,7 +366,7 @@ h2 {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background-color: #DCE0E6;
+	background-color: #f0f0f0;
 	border-radius: 10px;
 	padding: 20px;
 	padding-top: 60px;
@@ -523,7 +521,7 @@ h2 {
 	flex-direction: column;
 	justify-content: start;
 	align-items: center;
-	background-color: #DCE0E6;
+	background-color: #f0f0f0;
 	border-radius: 10px;
 	padding: 20px;
 	padding-top: 60px;
@@ -575,7 +573,7 @@ a:hover {
 	text-decoration: none;
 }
 .talentech-section a {
-	color: #003D6A;
+	color: #454470;
 	text-decoration: none;
 	background-color: transparent;
 	text-decoration: underline;
@@ -598,7 +596,7 @@ a:hover {
 	left: -8px;
 }
 .card-category span {
-	background: #dce0e640;
+	background: #f0f0f0;
 	padding: 8px;
 	border-radius: 5px;
 	font-size: 0.9rem;
@@ -649,7 +647,7 @@ a:hover {
 	display: block;
 }
 .apply-btn {
-    background-color: #003D6A !important;
+    background-color: #539333 !important;
     color: white !important;
     border: none;
     text-decoration: none !important;
