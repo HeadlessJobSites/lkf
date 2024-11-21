@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hæhre - Karriereportal</title>
+    <title>Lediga tjänster</title>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <link rel="stylesheet" href="./css/index-style.css">
 <link rel="icon" type="image/x-icon" href="./files/cropped-favicon-haehre.png">
@@ -19,14 +19,14 @@
 <script src="https://widget.gobistories.com/gwi/6" async onload="gobi.discover()"></script>
 
 	
-  <meta property="og:title" content="Hæhre karriereportal">
-  <meta property="og:description" content="Se ledige stillinger hos Hæhre">
-  <meta property="og:image" content="https://headlessjobsites.github.io/akh/files/Kvithammar.jpg">
+  <meta property="og:title" content="Lunds Kommuns Fastighets ABs karriärportal">
+  <meta property="og:description" content="Lediga jobb hos Lunds Kommuns Fastighets AB">
+  <meta property="og:image" content="https://headlessjobsites.github.io/lkf/files/Lediga-jobb.jpg">
   <meta property="og:url" content="https://career.talentech.com">
-  <meta name="twitter:card" content="Hæhre karriereportal">
-  <meta name="twitter:title" content="Hæhre karriereportal">
-  <meta name="twitter:description" content="Se ledige stillinger hos Hæhre">
-  <meta name="twitter:image" content="https://headlessjobsites.github.io/akh/files/Kvithammar.jpg">
+  <meta name="twitter:card" content="Lunds Kommuns Fastighets ABs karriärportal">
+  <meta name="twitter:title" content="Lunds Kommuns Fastighets ABs karriärportal">
+  <meta name="twitter:description" content="Lediga jobb hos Lunds Kommuns Fastighets AB">
+  <meta name="twitter:image" content="https://headlessjobsites.github.io/lkf/files/Lediga-jobb.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:type" content="website">
@@ -48,13 +48,13 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="./#jobs-anchor">Ledige stillinger</a>
+                    <a class="nav-link" href="./#jobs-anchor">Jobb</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./#meet-the-team">Møt teamet</a>
+                    <a class="nav-link" href="./#meet-the-team">Träffa de anställda</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./#recruitment-process">Rekrutteringsprosess</a>
+                    <a class="nav-link" href="./#recruitment-process">Rekryteringsprocess</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" target="blank" href="https://lkf.se">lkf.se <span class="sr-only">(current)</span></a>
@@ -96,8 +96,8 @@ $(document).ready(function() {
             <source src="https://career.talentech.com/files/Compressed-TT.mp4" type="video/mp4">
         </video>
         <div class="hero-content">
-            <h1>Vi bygger <span style="font-weight: 800;">fremtiden</span></h1>
-            <a href="#jobs-anchor" class="btn btn-primary btn-lg"><span class="btn-arrow"><strong>Se ledige stillinger</strong></span></a>
+            <h1>Jobba <span style="font-weight: 800;">hos oss</span></h1>
+            <a href="#jobs-anchor" class="btn btn-primary btn-lg"><span class="btn-arrow"><strong>Se ledia tjänster</strong></span></a>
         </div>
     </div>
 
@@ -109,13 +109,13 @@ document.addEventListener('DOMContentLoaded', function() {
     .then(response => response.json())
     .then(jobs => {
       const positionsCount = jobs.length; // Get the count of jobs from the feed
-      const btnText = positionsCount === 1 ? 'Se 1 ledig stilling' : `Se ${positionsCount} ledige stillinger`; // Update button text based on count
-      document.querySelector('a.btn.btn-primary.btn-lg strong').textContent = positionsCount > 0 ? btnText : 'Se ledige stillinger';
+      const btnText = positionsCount === 1 ? 'Se 1 ledig tjänst' : `Se ${positionsCount} lediga tjänster`; // Update button text based on count
+      document.querySelector('a.btn.btn-primary.btn-lg strong').textContent = positionsCount > 0 ? btnText : 'Se lediga tjänster';
     })
     .catch(error => {
       console.error('Error fetching job details:', error);
       // If there is an error fetching the jobs, show default text
-      document.querySelector('a.btn.btn-primary.btn-lg strong').textContent = 'Se ledige stillinger';
+      document.querySelector('a.btn.btn-primary.btn-lg strong').textContent = 'Se lediga tjänster';
     });
 });
 </script>
@@ -134,8 +134,9 @@ document.addEventListener('DOMContentLoaded', function() {
 	
 	<div class="talentech-section py-5 mb-3" id="company-section">
     <div class="container pt-4 m-mt-2">
-        <h2 class="m-px-2">Velkommen til <span class="title-alt">Hæhre</span></h2>
-        <p class="my-4  m-px-2">Hæhre Entreprenør er en av Norges ledende anleggsentreprenører, med over 50 års erfaring i å bygge og forme infrastrukturen i vårt langstrakte land. Siden starten i 1974 har vi vokst til å bli en betydelig aktør, kjent for vår evne til å gjennomføre store og komplekse prosjekter med høy kvalitet og presisjon.</p>
+        <h2 class="m-px-2">Välkommen till <span class="title-alt">Lunds Kommuns Fastighets AB</span></h2>
+        <p class="my-4  m-px-2">Om du, liksom vi, brinner för att förbättra människors boende, trygghet och trivsel är du välkommen att söka jobb hos oss eller prenumerera på våra tjänster.</p>
+        <p class="my-4  m-px-2">I vårt dagliga arbete skapar vi tillsammans FLER OCH BÄTTRE HEM för lundaborna. Alla behöver ett bra och hållbart boende där man trivs och bra bostäder gör Lund mer attraktivt för både människor och företag. Som medarbetare på LKF är du delaktig i utvecklingen av bostadsmarknaden i Lund, ett både spännande och utmanande jobb.</p>
     </div>
 </div>
 
