@@ -123,7 +123,7 @@ document.addEventListener("DOMContentLoaded", function() {
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: rgba(0, 0, 0, 0.0);">
     <div class="container m-py-0">
         <a class="navbar-brand" href="./" aria-label="Home">
-            <img src="https://career.talentech.com/files/Logo_Hæhre_web.png" height="40" class="d-inline-block align-top" alt="">
+            <img src="https://career.talentech.com/files/lkf-light.png" height="40" class="d-inline-block align-top" alt="">
         </a>
         <div class="d-flex justify-content-end align-items-center flex-grow-1">
             <a class="nav-link ml-auto d-lg-none btn btn-primary apply-btn m-mr-2" href="#appform-header">Apply</a>
@@ -538,14 +538,14 @@ window.addEventListener('message', function(event) {
 
 <div class="container my-5 py-5 m-my-0" style="text-align: center;">
     <div class="">
-        <h2>Fant du ikke stillingen for deg?</h2>
+        <h2>Hittade du inte tjänsten för dig?</h2>
         <div class="mt-4 mb-2">
-		<p>Abonner på stillinger, så får du en e-post når det er en ledig stilling som passer dine preferanser.</p>
+		<p>Prenumerera på tjänster så får du ett mail när det finns en ledig tjänst som matchar dina preferenser.</p>
 		</div>
     </div>
  
 
-    <button id="agent" class="mt-3 btn btn-primary" style="font-weight:800">Register deg</button>
+    <button id="agent" class="mt-3 btn btn-primary" style="font-weight:800">Register dig</button>
 
 
 <div class="modal fade modal-fullscreen-90w" id="exampleModal" tabindex="-1" aria-hidden="true">
@@ -579,13 +579,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <section class="text-center bg-dark text-light py-5">
     <div class="container">
-        <img src="./files/Logo_Hæhre_web.png" alt="Hæhre Logo" class="mb-3" style="max-width: 180px;">
+        <img src="./files/logo-light.png" alt="LKF Logo" class="mb-3" style="max-width: 180px;">
                 <div class="mt-3 mb-4" style="max-width: 600px; margin: auto;">
-		 <p style="font-size: 1.25rem;">Hæhre tilbyr unike karrieremuligheter i et av Norges mest spennende anleggsentreprenører. Bli med å bygge fremtiden sammen med oss.</p>
+		 <p style="font-size: 1.25rem;">LKF erbjuder hyresbostäder i Lunds stad, Genarp, Södra Sandby, Stångby, Veberöd, Dalby och Revinge. Totalt äger och förvaltar vi drygt 10.000 bostadslägenheter, vilket innebär att mer än 20 000 lundabor har sitt hem hos oss.
+
+</p>
 		</div>
         <div class="">
-            <a href="https://www.facebook.com/HaehreEntreprenor/?locale=nb_NO"><img src="./files/TT-f.svg" alt="Icon 1" class="mx-2" style="width: 30px; height: 30px;"></a>
-            <a href="https://no.linkedin.com/company/haehreentreprenor"><img src="./files/TT-l.svg" alt="Icon 2" class="mx-2" style="width: 30px; height: 30px;"></a>
+            <a href="https://www.facebook.com/LKFLUND/"><img src="./files/TT-f.svg" alt="Icon 1" class="mx-2" style="width: 30px; height: 30px;"></a>
+            <a href="https://se.linkedin.com/company/lkf-lund"><img src="./files/TT-l.svg" alt="Icon 2" class="mx-2" style="width: 30px; height: 30px;"></a>
             <a href="https://lkf.no/kontakt-selskapet/"><img src="./files/TT-e.svg" alt="Icon 4" class="mx-2" style="width: 30px; height: 30px;"></a>
         </div>
     </div>
@@ -662,13 +664,13 @@ $(document).ready(function () {
 
 	    
 	// Populate location filter
-        $('#locationFilter').html('<option value="All">All locations</option>');
+        $('#locationFilter').html('<option value="All">All platser</option>');
         locationSet.forEach(country => {
             $('#locationFilter').append(`<option value="${country}">${country}</option>`);
         });
 
         // Populate job type filter
-        $('#jobTypeFilter').html('<option value="All">All job types</option>');
+        $('#jobTypeFilter').html('<option value="All">Alla typer av jobb</option>');
         jobTypeSet.forEach(type => {
             $('#jobTypeFilter').append(`<option value="${type}">${type}</option>`);
         });
