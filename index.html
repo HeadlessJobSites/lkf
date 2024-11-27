@@ -863,10 +863,10 @@ function displayJobs() {
         const feed = await fetchFeed();
         const markers = {};
 
-        const map = L.map('mapid', {
-            attributionControl: false,
-            scrollWheelZoom: false
-        }).setView([64.70397159508356, 13.109082259358335], 4);
+const map = L.map('mapid', {
+    attributionControl: false,
+    scrollWheelZoom: false
+}).setView([55.6050, 13.0038], 4);
 
         L.tileLayer('https://api.mapbox.com/styles/v1/inequi/cm3rb3lgo005i01r2g1k9bdfh/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoiaW5lcXVpIiwiYSI6ImNsdTQ0c2FybTFiZG4ya3FzZjQxOW91ejUifQ.Z_vyEld041G0LshX2Mdtpw', {
             maxZoom: 8,
