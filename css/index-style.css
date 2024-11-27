@@ -263,12 +263,9 @@ h2 {
 	height: 450px;
 	display: block;
 }
-#mapid {
-	max-height: 600px;
-}
 @media (max-width: 768px) {
 #mapid {
-	max-height: 350px;
+	height: 350px !important;
 }
 .intro-header {
 	font-size: 1.3em !important;
