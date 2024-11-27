@@ -264,9 +264,6 @@ h2 {
 	display: block;
 }
 @media (max-width: 768px) {
-#mapid {
-	height: 350px !important;
-}
 .intro-header {
 	font-size: 1.3em !important;
 }
